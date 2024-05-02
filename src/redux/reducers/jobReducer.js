@@ -14,6 +14,7 @@ export const jobReducer = createReducer(initialState, (builder) => {
         })
         .addCase(GET_JOBS_SUCCESS, (state, action) => {
             state.loading = false;
+            console.log(action.payload);
             state.jobs = action.payload.jdList;
             state.totalCount = action.payload.totalCount;
         })

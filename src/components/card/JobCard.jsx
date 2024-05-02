@@ -1,8 +1,8 @@
 import React from "react";
 import "./JobCard.css";
 
-const JobCard = () => {
-  return <div>JobCard</div>;
+const JobCard = ({ jobData }) => {
+  return <div>{"Job data"}</div>;
 };
 
 export default JobCard;

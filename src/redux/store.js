@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { jobReducer } from './reducers/jobReducer';
 
-const store = configureStore({
+export const store = configureStore({
     reducer: {
         jobDetails: jobReducer,
     },
